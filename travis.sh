@@ -78,7 +78,7 @@ travis_run sudo apt-get -qq update
 travis_run rosdep update
 
 # Install experimental packages
-travis_run sudo apt-get install -y wget libfcl-dev
+travis_run sudo apt-get install -y wget libfcl-dev liboctomap-dev
 travis_run wget http://build.osrfoundation.org/job/fcl-pkg_builder-master-generic/9/artifact/pkgs/libfcl0.5_0.5.0-1osrf1%7Exenial1_amd64.deb
 travis_run sudo dpkg -i libfcl0.5_0.5.0-1osrf1~xenial1_amd64.deb
 travis_run wget http://build.osrfoundation.org/job/fcl-pkg_builder-master-generic/9/artifact/pkgs/libfcl-dev_0.5.0-1osrf1%7Exenial1_amd64.deb
